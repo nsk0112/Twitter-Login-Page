@@ -1,0 +1,303 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.top_panel{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left_panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+}
+
+.left_image{
+    display: flex;
+    justify-content: flex-start;
+    width:100%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+}
+
+.twitter_icon{
+    position: absolute;
+    left: auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 25%;
+    margin-bottom: 4em;
+}
+
+.right_panel{
+    margin-left: 2.75em;
+}
+
+.upper_right_panel{
+    display: flex;
+    margin: 5px;
+    justify-content: flex-start;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.twitter_icon_mini{
+    display: flex;
+    width: 3em;
+    align-self: flex-start;
+    margin-top: 2em;
+}
+
+.text_right_panel{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.5px;
+    padding-bottom: 25px;
+}
+
+h1{
+    display: flex;
+    font-family: Verdana;
+    color: #e7e9ea;
+    font-size: 64px;
+    flex-wrap: wrap;
+    margin-left: 0;
+}
+
+p{
+    font-size: 31px;
+    font-family: Verdana;
+    color: #e7e9ea;
+    display: flex;
+    margin-top: -10px;
+    margin-bottom: 0;
+}
+
+.sign_up{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.sign_up_buttons{
+    border-radius: 15px;
+    width: 250px;
+}
+
+.google_button{
+    border-radius: 25px;
+    width: 300px;
+    height: 42px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google_logo{
+    width: 20px;
+    margin-right: 15px;
+}
+
+.apple_button{
+    border-radius: 25px;
+    width: 300px;
+    height: 42px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.apple_button:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.apple_logo{
+    width: 25px;
+    margin-right: 15px;
+}
+
+.sign_up p{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+}
+
+.sign_up p:before, .sign_up p:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(150, 150, 150, 0.5) ;
+    margin: auto;
+}
+
+.sign_up p:before{
+    margin-right: 8px;
+}
+
+.sign_up p:after{
+    margin-left: 8px;
+}
+
+.telephone_button{
+    border-radius: 25px;
+    width: 300px;
+    height: 42px;
+    background-color: rgb(29, 155, 240);
+    color: white;
+    font-size: 15px;
+    display: flex;
+    /*flex-wrap: nowrap;*/
+    margin-top: 20px;
+    
+}
+
+.telephone_button:hover{
+    background-color: rgb(25, 140, 230);
+}
+
+.telephone_button_text{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.warning p{
+    display: inline-block;
+    font-size: 10px;
+    color:rgb(150, 150, 150);
+    padding: 0 10px;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.warning a{
+    color: rgb(29, 155, 240);
+    text-decoration: none;
+}
+
+.warning a:hover{
+    text-decoration: underline;
+}
+
+.sign_in{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 80px;
+    width: inherit;
+    padding-bottom: 20px;
+}
+
+.sign_in p{
+    font-size: 17px;
+    color: #e7e9ea;
+    padding-bottom: -15px;
+}
+
+.sign_in_button{
+    border-radius: 25px;
+    width: 300px;
+    height: 42px;
+    background-color: black;
+    border-color: #e7e9ea;
+    border-width: 0.1px;
+    margin-top: 30px;
+}
+
+.sign_in_button:hover{
+    background-color: #1b1e20;
+}
+
+.sign_in_button_text{
+    color: #1d9bf0;
+    font-size: 15px;
+}
+
+.bottom_panel{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.first_line a{
+    display: inline-block;
+    padding: 0px 10px;
+    color: #71767b;
+    font-size: 11px;
+    text-decoration: none;
+    flex-wrap: nowrap;
+}
+
+.first_line a:hover{
+    text-decoration: underline;
+}
+
+.second_line p{
+    margin: 10px;
+    color: #71767b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+}
+
+@media (max-width: 1016px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top_panel{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .right_panel{
+        order: 2;
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .left_panel{
+        order: 1;
+        width: 100%;
+        height: 25%;
+    }
+
+    .bottom_panel{
+        order: 3;
+        width: 100%;
+    }
+}
